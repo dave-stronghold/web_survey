@@ -1,0 +1,55 @@
+.feedback{
+    background-color:#E15A93;
+    color:white
+}
+
+.font_style{
+
+font-family: Inter !important;
+font-weight:500 !important;
+font-size:13px !important
+
+}
+
+.up_text{
+    
+    position: absolute;
+    top: 47%;
+    left: 37%;
+    width: 13%;
+    color:white
+}
+
+
+
+
+.down_text{
+    top: 74%;
+    left: 50%;
+    width: 14%;
+}
+
+@media only screen and (max-width: 600px) {
+    .img1_button{
+        margin-top: 10% !important;
+       margin-left: 40% !important;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .img1_button{
+        margin-top: 7% !important;
+       margin-left: 45% !important;
+    }
+}
+@media only screen and (max-width: 590px) {
+    .img1_button{
+        margin-top: 7% !important;
+       margin-left: 50% !important;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .img1_button{
+        margin-top: 7% !important;
+       margin-left: 40% !important;
+    }
+}

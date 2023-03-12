@@ -1,0 +1,574 @@
+.feedback{
+    background-color:#E15A93;
+    color:white
+}
+
+.font_style{
+
+font-family: Inter !important;
+font-weight:500 !important;
+
+font-style: italic !important;
+
+}
+
+.up_text{
+    
+    position: absolute;
+    top: 1%;
+    left: 51%;
+    width: 13%;
+    font-size:60% !important;
+    color:white !important
+
+}
+
+.mid_text{
+    
+    position: absolute;
+    top: 41%;
+    left: 37%;
+    width: 13%;
+    font-size:70% !important;
+    color:#E0B555 !important
+
+}
+.width{
+    width: 13% !important;
+}
+.width2{
+    width: 15% !important;
+    font-size:88% !important;
+    font-size: 13px !important;
+}
+.down_text{
+    top: 93%;
+    left: 51%;
+    width: 12%;
+      font-size:54% !important;
+        color:white !important
+}
+
+.ok_text{
+
+            position: absolute;
+            top: 47%;
+            left: 36.5%;
+            color: white
+      
+        
+        
+}
+
+
+@media only screen and (max-width: 1180px) {
+    /* .hotel{
+       width: 60% !important;
+    } */
+    
+.up_text{
+    
+    position: absolute;
+    top: 1%;
+    left: 51%;
+    width: 13%;
+    font-size:60% !important;
+    color:white !important
+
+}
+
+.mid_text{
+    
+    position: absolute;
+    top: 41%;
+    left: 37%;
+    width: 13%;
+    font-size:59% !important;
+    color:#E0B555 !important
+
+}
+.width{
+    width: 13% !important;
+}
+.width2{
+    width: 15% !important;
+    font-size:88% !important;
+    font-size: 13px !important;
+}
+.down_text{
+    top: 90%;
+    left: 51%;
+    width: 12%;
+      font-size:54% !important;
+        color:white !important
+}
+}
+
+.do_text{
+    position: absolute;
+            top: 74%;
+            left: 50%
+}
+
+
+/* @media only screen and (max-width: 900px) {
+
+  
+    .ok_text{
+        top: 47%;
+            left: 11.5%; 
+            width: 25%;
+            font-size: 140% !important;
+    }
+    .do_text{
+            top: 74%;
+            left: 50%;
+                    font-size: 120% !important;
+                    font-style: italic;
+}
+    .width{
+width: 41% !important;
+    }
+    .width2{
+width: 51% !important;
+    }
+} */
+
+@media only screen and (max-width: 1600px) {
+  
+
+    .ok_text{
+        top: 47%;
+            left: 36.5%; 
+            width: 10%;
+            font-size: 60% !important;
+    }
+    .do_text{
+            top: 74%;
+            left: 49%;
+            width: 10% !important;
+                    font-size: 70% !important;
+}
+    .width{
+width: 14% !important;
+    }
+    .width2{
+width: 16% !important;
+    }
+}
+@media only screen and (max-width: 1200px) {
+  
+
+    .ok_text{
+        top: 47%;
+            left: 36.5%; 
+            width: 10%;
+            font-size: 58% !important;
+    }
+    .do_text{
+            top: 74%;
+            left: 49%;
+            width: 10% !important;
+                    font-size: 70% !important;
+}
+    .width{
+width: 14% !important;
+    }
+    .width2{
+width: 16% !important;
+    }
+}
+@media only screen and (max-width: 1000px) {
+  
+
+    .ok_text{
+        top: 47%;
+            left: 33.5%; 
+            width: 10%;
+            font-size: 50% !important;
+    }
+    .do_text{
+            top: 74%;
+            left: 50%;
+            width: 10% !important;
+                    font-size: 60% !important;
+
+}
+    .width{
+width: 17% !important;
+    }
+    .width2{
+width: 19% !important;
+    }
+    .img1_button{
+        margin-top: 4%;
+    }
+}
+@media only screen and (max-width: 750px) {
+  
+
+    .ok_text{
+        top: 47%;
+            left: 33.5%; 
+            width: 15%;
+            font-size: 41% !important;
+    }
+    .do_text{
+            top: 74%;
+            left: 53%;
+            width: 10% !important;
+                    font-size: 40% !important;
+
+}
+    .width{
+width: 17% !important;
+    }
+    .width2{
+width: 17% !important;
+    }
+    .img1_button{
+        margin-top: 4%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  
+
+    .ok_text{
+        top: 49%;
+            left: 33.5%; 
+            width: 15%;
+            font-size: 40% !important;
+    }
+    .do_text{
+            top: 74%;
+            left: 50%;
+            width: 10% !important;
+                    font-size: 50% !important;
+
+}
+    .width{
+width: 16% !important;
+    }
+    .width2{
+width: 15% !important;
+    }
+    .img1_button{
+        margin-top: 4%;
+    }
+}
+
+
+@media only screen and (max-width: 590px) {
+  .bank{
+    width: 70% !important;
+  }
+
+    .ok_text{
+        top: 49%;
+            left: 18.5%; 
+            width: 25%;
+            font-size: 50% !important;
+    }
+    .do_text{
+            top: 74%;
+            left: 56%;
+            width: 10% !important;
+                    font-size: 50% !important;
+
+}
+    .width{
+width: 30% !important;
+    }
+    .width2{
+width: 28% !important;
+    }
+    .img1_button{
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+  .bank{
+    width: 70% !important;
+  }
+
+    .ok_text{
+        top: 47%;
+            left: 18.5%; 
+            width: 25%;
+            font-size: 46% !important;
+    }
+    .do_text{
+            top: 74%;
+            left: 53%;
+            width: 10% !important;
+                    font-size: 50% !important;
+
+}
+    .width{
+width: 32% !important;
+    }
+    .width2{
+width: 30% !important;
+    }
+    .img1_button{
+        margin-top: 2%;
+    }
+}
+
+
+@media only screen and (max-width: 1010px) {
+    /* .hotel{
+       width: 60% !important;
+    } */
+    
+.up_text{
+    
+    position: absolute;
+    top: 1%;
+    left: 51%;
+    width: 13%;
+    font-size:52% !important;
+    color:white !important
+
+}
+
+.mid_text{
+    
+    position: absolute;
+    top: 41%;
+    left: 37%;
+    width: 13%;
+    font-size:54% !important;
+    color:#E0B555 !important
+
+}
+
+.down_text{
+    top: 90%;
+    left: 51%;
+    width: 12%;
+      font-size:54% !important;
+        color:white !important
+}
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    /* .hotel{
+       width: 60% !important;
+    } */
+    
+.up_text{
+    
+    position: absolute;
+    top: 1%;
+    left: 51%;
+    width: 13%;
+    font-size:40% !important;
+    color:white !important
+
+}
+
+.mid_text{
+    
+    position: absolute;
+    top: 39%;
+    left: 37%;
+    width: 13%;
+    font-size:45% !important;
+    color:#E0B555 !important
+
+}
+
+.down_text{
+    top: 88%;
+    left: 51%;
+    width: 12%;
+      font-size:48% !important;
+        color:white !important
+}
+}
+
+
+@media only screen and (max-width: 700px) {
+    .hotel{
+       width: 60% !important;
+    }
+    .up_text{
+    
+    position: absolute;
+    top: 1%;
+    left: 51%;
+    width: 27%;
+    font-size:53% !important;
+    color:white !important
+
+}
+
+.mid_text{
+    
+    position: absolute;
+    top: 39%;
+    left: 25%;
+    width: 23%;
+    font-size:69% !important;
+    color:#E0B555 !important
+
+}
+
+.down_text{
+    top: 93%;
+    left: 53%;
+    width: 27%;
+      font-size:48% !important;
+        color:white !important
+}
+}
+
+
+@media only screen and (max-width: 580px) {
+    .hotel{
+       width: 60% !important;
+    }
+    .up_text{
+    
+    position: absolute;
+    top: 1%;
+    left: 51%;
+    width: 27%;
+    font-size:53% !important;
+    color:white !important
+
+}
+
+.mid_text{
+    
+    position: absolute;
+    top: 39%;
+    left: 25%;
+    width: 23%;
+    font-size:60% !important;
+    color:#E0B555 !important
+
+}
+
+.down_text{
+    top: 93%;
+    left: 53%;
+    width: 27%;
+      font-size:48% !important;
+        color:white !important
+}
+}
+
+@media only screen and (max-width: 480px) {
+    .hotel{
+       width: 80% !important;
+    }
+    .up_text{
+    
+    position: absolute;
+    top: 1%;
+    left: 53%;
+    width: 28%;
+    font-size:48% !important;
+    color:white !important
+
+}
+
+.mid_text{
+    
+    position: absolute;
+    top: 37%;
+    left: 19%;
+    width: 23%;
+    font-size:53% !important;
+    color:#E0B555 !important
+
+}
+
+.down_text{
+    top: 91%;
+    left: 53%;
+    width: 27%;
+      font-size:48% !important;
+        color:white !important
+}
+}
+
+@media only screen and (max-width: 1250px) {
+ 
+    .feed_points{
+   
+       
+          margin-left: 37% !important;
+          margin-top: 3% !important
+        
+}
+.run_point{
+    margin-left: 2% !important;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+ 
+    .feed_points{
+   
+       
+          margin-left: 35% !important;
+          margin-top: 3% !important;
+          font-size: 15px !important
+        
+}
+.run_point{
+    margin-left: 2% !important;
+}
+}
+
+@media only screen and (max-width: 700px) {
+ 
+    .feed_points{
+   
+       
+          margin-left: 30% !important;
+          margin-top: 3% !important;
+          font-size: 15px !important
+        
+}
+.run_point{
+    margin-left: 6% !important;
+}
+}
+
+@media only screen and (max-width: 620px) {
+ 
+    .feed_points{
+   
+       
+          margin-left: 27% !important;
+          margin-top: 3% !important;
+          font-size: 15px !important
+        
+}
+.run_point{
+    margin-left: 6% !important;
+}
+}
+
+@media only screen and (max-width: 500px) {
+ 
+    .feed_points{
+   
+       
+          margin-left: 14% !important;
+          margin-top: 3% !important;
+          font-size: 15px !important
+        
+}
+.run_point{
+    margin-left: 6% !important;
+}
+}

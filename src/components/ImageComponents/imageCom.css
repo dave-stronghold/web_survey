@@ -1,0 +1,150 @@
+.font_style{
+
+font-family: Inter !important;
+font-weight:500 !important;
+font-size:30% !important;
+
+}
+.bank{
+        border-radius: 10px;
+            width: 30%;
+            display: block;
+
+            margin: 5% auto auto
+}
+.width{
+    width: 30% !important;
+}
+
+.width2{
+    width: 5% !important;
+}
+.feed_points{
+   
+          display: flex;
+          flex-direction: column;
+          margin-left: 40%;
+          margin-top: 1%
+        
+}
+@media only screen and (max-width: 700px) {
+    .bank{
+       width: 100rem !important;
+       height: 100%!important;
+    }
+    .feed_points{
+   
+       
+          margin-left: 15%;
+          margin-top: 5%
+        
+}
+.run_point{
+    margin-left: 9%;
+}
+}
+@media only screen and (max-width: 600px) {
+    .hotel{
+       width: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .bank{
+       width: 36% !important;
+       height: 100%!important;
+    }
+    .feed_points{
+   
+       
+          margin-left: 30%;
+          margin-top: 5%
+        
+}
+.run_point{
+    margin-left: 5%;
+}
+}
+
+@media only screen and(min-width: 200px) and (max-width: 600px) {
+    .bank{
+       width: 88% !important;
+    }
+
+    .ok_text{
+        top: 32%;
+            left: 10%; 
+            width: 15%;
+            font-size: 60% !important;
+    }
+    .do_text{
+            top: 74%;
+            left: 50%;
+                    font-size: 75% !important;
+}
+    .width{
+width: 41% !important;
+    }
+    .width2{
+width: 51% !important;
+    }
+}
+@media only screen and(min-width: 200px) and (max-width: 600px) {
+    .bank{
+       width: 88% !important;
+    }
+
+    .ok_text{
+        top: 32%;
+            left: 10%; 
+            width: 15%;
+            background-color: red !important;
+            font-size: 60% !important;
+    }
+    .do_text{
+            top: 74%;
+            left: 50%;
+                    font-size: 75% !important;
+}
+    .width{
+width: 41% !important;
+    }
+    .width2{
+width: 51% !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .bank{
+       width: 88% !important;
+    }
+
+    .ok_text{
+        top: 32%;
+            left: 10%; 
+            width: 17%;
+            font-size: 60% !important;
+    }
+    .do_text{
+            top: 74%;
+            left: 50%;
+                    font-size: 75% !important;
+}
+    .width{
+width: 41% !important;
+    }
+    .width2{
+width: 51% !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+   
+    .feed_points{
+   
+       
+          margin-left: 15%;
+          margin-top: 40%
+        
+}
+}
