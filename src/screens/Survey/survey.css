@@ -1,7 +1,10 @@
 .lop:hover{
 background-color: #000;
 }
-
+.opacity{
+    opacity:0.5 !important;
+    cursor:unset !important
+}
 .left_tick{
     visibility:visible !important;
     z-index: 999;
@@ -32,4 +35,37 @@ margin-left: 30%;
      font-weight: 500;
 font-size: 16px;
 margin-left: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+    .first_para{
+    width: 100% !important;
+    }
+    .second_para{
+            width: 100% !important;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+     .first_para{
+    width: 100% !important;
+    }
+    .second_para{
+            width: 100% !important;
+    }
+}
+@media only screen and (max-width: 590px) {
+     .first_para{
+    width: 100% !important;
+    }
+    .second_para{
+            width: 100% !important;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .first_para{
+    width: 100% !important;
+    }
+    .second_para{
+            width: 100% !important;
+    }
 }

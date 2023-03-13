@@ -86,9 +86,10 @@ const ImageFeedback = () => {
     
   }, []);
  
-  const pull_data = (data) => {
-    setFeedback(data);
-  };
+   const pull_data = (data, val) => {
+     setFeedback(data);
+     localStorage.setItem(val, JSON.stringify(data));
+   };
   return (
     <>
       <div
@@ -123,30 +124,30 @@ const ImageFeedback = () => {
       </div>
       {questions.length > 0 && check == 1 && (
         <ImageCom
-          questions={[questions[0], questions[1], feedback1[0]]}
+          questions={[questions[0], questions[1], 9]}
           func={pull_data}
         />
       )}
       {questions.length > 0 && check == 2 && (
-        <ImageCom questions={[questions[2], questions[3]]} func={pull_data} />
+        <ImageCom questions={[questions[2], questions[3],10]} func={pull_data} />
       )}
       {questions.length > 0 && check == 3 && (
-        <ImageCom questions={[questions[4], questions[5]]} func={pull_data} />
+        <ImageCom questions={[questions[4], questions[5],11]} func={pull_data} />
       )}
       {questions.length > 0 && check == 4 && (
-        <ImageCom questions={[questions[6], questions[7]]} func={pull_data} />
+        <ImageCom questions={[questions[6], questions[7],12]} func={pull_data} />
       )}
       {questions.length > 0 && check == 5 && (
-        <ImageCom questions={[questions[8], questions[9]]} func={pull_data} />
+        <ImageCom questions={[questions[8], questions[9],13]} func={pull_data} />
       )}
       {questions.length > 0 && check == 6 && (
-        <ImageCom questions={[questions[10], questions[11]]} func={pull_data} />
+        <ImageCom questions={[questions[10], questions[11],14]} func={pull_data} />
       )}
       {questions.length > 0 && check == 7 && (
-        <ImageCom questions={[questions[12], questions[13]]} func={pull_data} />
+        <ImageCom questions={[questions[12], questions[13],15]} func={pull_data} />
       )}
       {questions.length > 0 && check == 8 && (
-        <ImageCom questions={[questions[14], questions[15]]} func={pull_data} />
+        <ImageCom questions={[questions[14], questions[15],16]} func={pull_data} />
       )}
       <Button
         variant="dark"

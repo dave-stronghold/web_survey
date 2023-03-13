@@ -5,9 +5,13 @@ font-weight:500 !important;
 font-size:30% !important;
 
 }
+
+.normal_feedback{
+    color: #A29EB6
+}
 .bank{
-        border-radius: 10px;
-            width: 30%;
+
+            width: 25%;
             display: block;
 
             margin: 5% auto auto

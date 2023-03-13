@@ -2,7 +2,9 @@
     background-color:#E15A93;
     color:white
 }
-
+.normal_feedback{
+    color: #A29EB6
+}
 .font_style{
 
 font-family: Inter !important;
@@ -16,8 +18,8 @@ font-style: italic !important;
     
     position: absolute;
     top: 1%;
-    left: 51%;
-    width: 13%;
+    left: 50.2%;
+    width: 11%;
     font-size:60% !important;
     color:white !important
 
@@ -26,9 +28,9 @@ font-style: italic !important;
 .mid_text{
     
     position: absolute;
-    top: 41%;
-    left: 37%;
-    width: 13%;
+    top: 36%;
+    left: 39%;
+    width: 10.5%;
     font-size:70% !important;
     color:#E0B555 !important
 
@@ -42,8 +44,8 @@ font-style: italic !important;
     font-size: 13px !important;
 }
 .down_text{
-    top: 93%;
-    left: 51%;
+    top: 91%;
+    left: 50%;
     width: 12%;
       font-size:54% !important;
         color:white !important
@@ -60,8 +62,7 @@ font-style: italic !important;
         
 }
 
-
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1285px) {
     /* .hotel{
        width: 60% !important;
     } */
@@ -70,8 +71,8 @@ font-style: italic !important;
     
     position: absolute;
     top: 1%;
-    left: 51%;
-    width: 13%;
+    left: 50.5%;
+    width: 11%;
     font-size:60% !important;
     color:white !important
 
@@ -80,9 +81,9 @@ font-style: italic !important;
 .mid_text{
     
     position: absolute;
-    top: 41%;
-    left: 37%;
-    width: 13%;
+    top: 39%;
+    left: 39.5%;
+    width: 10% !important;
     font-size:59% !important;
     color:#E0B555 !important
 
@@ -97,8 +98,51 @@ font-style: italic !important;
 }
 .down_text{
     top: 90%;
-    left: 51%;
+    left: 50%;
+    width: 11.7%;
+      font-size:53% !important;
+        color:white !important
+}
+}
+
+@media only screen and (max-width: 1180px) {
+    /* .hotel{
+       width: 60% !important;
+    } */
+    
+.up_text{
+    
+    position: absolute;
+    top: 1%;
+    left: 50.3%;
     width: 12%;
+    font-size:55% !important;
+    color:white !important
+
+}
+
+.mid_text{
+    
+    position: absolute;
+    top: 37%;
+    left: 39.4%;
+    width: 10.7% !important;
+    font-size:53% !important;
+    color:#E0B555 !important;
+     height:"7%"
+}
+.width{
+    width: 13% !important;
+}
+.width2{
+    width: 15% !important;
+    font-size:88% !important;
+    font-size: 13px !important;
+}
+.down_text{
+    top: 90%;
+    left: 50.5%;
+    width: 11%;
       font-size:54% !important;
         color:white !important
 }
@@ -139,21 +183,21 @@ width: 51% !important;
 
     .ok_text{
         top: 47%;
-            left: 36.5%; 
+            left: 38.7%; 
             width: 10%;
             font-size: 60% !important;
     }
     .do_text{
             top: 74%;
-            left: 49%;
+            left: 50.5%;
             width: 10% !important;
                     font-size: 70% !important;
 }
     .width{
-width: 14% !important;
+width: 11% !important;
     }
     .width2{
-width: 16% !important;
+width: 11.4% !important;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -190,15 +234,14 @@ width: 16% !important;
     .do_text{
             top: 74%;
             left: 50%;
-            width: 10% !important;
-                    font-size: 60% !important;
+                    font-size: 53% !important;
 
 }
     .width{
-width: 17% !important;
+width: 16.7% !important;
     }
     .width2{
-width: 19% !important;
+width: 18% !important;
     }
     .img1_button{
         margin-top: 4%;
@@ -221,10 +264,10 @@ width: 19% !important;
 
 }
     .width{
-width: 17% !important;
+width: 16% !important;
     }
     .width2{
-width: 17% !important;
+width: 15.5% !important;
     }
     .img1_button{
         margin-top: 4%;
@@ -235,7 +278,7 @@ width: 17% !important;
   
 
     .ok_text{
-        top: 49%;
+        top: 45%;
             left: 33.5%; 
             width: 15%;
             font-size: 40% !important;
@@ -244,14 +287,14 @@ width: 17% !important;
             top: 74%;
             left: 50%;
             width: 10% !important;
-                    font-size: 50% !important;
+                    font-size: 42% !important;
 
 }
     .width{
 width: 16% !important;
     }
     .width2{
-width: 15% !important;
+width: 18% !important;
     }
     .img1_button{
         margin-top: 4%;
@@ -261,18 +304,18 @@ width: 15% !important;
 
 @media only screen and (max-width: 590px) {
   .bank{
-    width: 70% !important;
+    width: 65% !important;
   }
 
     .ok_text{
         top: 49%;
-            left: 18.5%; 
+            left: 20.5%; 
             width: 25%;
             font-size: 50% !important;
     }
     .do_text{
             top: 74%;
-            left: 56%;
+            left: 54%;
             width: 10% !important;
                     font-size: 50% !important;
 
@@ -283,8 +326,10 @@ width: 30% !important;
     .width2{
 width: 28% !important;
     }
+  
     .img1_button{
         margin-top: 2%;
+        margin-left: 40% !important;
     }
 }
 
@@ -303,7 +348,7 @@ width: 28% !important;
             top: 74%;
             left: 53%;
             width: 10% !important;
-                    font-size: 50% !important;
+                    font-size: 45% !important;
 
 }
     .width{
@@ -327,9 +372,9 @@ width: 30% !important;
     
     position: absolute;
     top: 1%;
-    left: 51%;
-    width: 13%;
-    font-size:52% !important;
+    left: 50.5%;
+    width: 11%;
+    font-size:45% !important;
     color:white !important
 
 }
@@ -337,19 +382,19 @@ width: 30% !important;
 .mid_text{
     
     position: absolute;
-    top: 41%;
-    left: 37%;
-    width: 13%;
-    font-size:54% !important;
+    top: 38%;
+    left: 39%;
+    width: 12%;
+    font-size:51% !important;
     color:#E0B555 !important
 
 }
 
 .down_text{
-    top: 90%;
-    left: 51%;
-    width: 12%;
-      font-size:54% !important;
+    top: 89%;
+    left: 50.3%;
+    width: 10.5%;
+      font-size:50% !important;
         color:white !important
 }
 }
@@ -365,8 +410,8 @@ width: 30% !important;
     
     position: absolute;
     top: 1%;
-    left: 51%;
-    width: 13%;
+    left: 50.5%;
+    width: 11%;
     font-size:40% !important;
     color:white !important
 
@@ -375,19 +420,54 @@ width: 30% !important;
 .mid_text{
     
     position: absolute;
-    top: 39%;
-    left: 37%;
-    width: 13%;
+    top: 37%;
+    left: 39%;
+    width: 11%;
     font-size:45% !important;
     color:#E0B555 !important
 
 }
 
 .down_text{
-    top: 88%;
+    top: 87.5%;
+    left: 50.5%;
+    width: 11%;
+      font-size:43% !important;
+        color:white !important
+}
+}
+@media only screen and (max-width: 810px) {
+    .hotel{
+       width: 40% !important;
+    }
+    
+.up_text{
+    
+    position: absolute;
+    top: 1%;
+    left: 50.5%;
+    width: 15%;
+    font-size:55% !important;
+    color:white !important
+
+}
+
+.mid_text{
+    
+    position: absolute;
+    top: 37%;
+    left: 33%;
+    width: 15% !important;
+    font-size:53% !important;
+    color:#E0B555 !important
+
+}
+
+.down_text{
+    top: 88.5%;
     left: 51%;
-    width: 12%;
-      font-size:48% !important;
+    width: 16%;
+      font-size:53% !important;
         color:white !important
 }
 }
@@ -402,8 +482,8 @@ width: 30% !important;
     position: absolute;
     top: 1%;
     left: 51%;
-    width: 27%;
-    font-size:53% !important;
+    width: 27% !important;
+    font-size:55% !important;
     color:white !important
 
 }
@@ -413,7 +493,7 @@ width: 30% !important;
     position: absolute;
     top: 39%;
     left: 25%;
-    width: 23%;
+    width: 23% !important;
     font-size:69% !important;
     color:#E0B555 !important
 
@@ -421,9 +501,9 @@ width: 30% !important;
 
 .down_text{
     top: 93%;
-    left: 53%;
+    left: 51%;
     width: 27%;
-      font-size:48% !important;
+      font-size:53% !important;
         color:white !important
 }
 }
@@ -447,9 +527,9 @@ width: 30% !important;
 .mid_text{
     
     position: absolute;
-    top: 39%;
+    top: 35%;
     left: 25%;
-    width: 23%;
+    width: 23% !important;
     font-size:60% !important;
     color:#E0B555 !important
 
@@ -473,7 +553,7 @@ width: 30% !important;
     position: absolute;
     top: 1%;
     left: 53%;
-    width: 28%;
+    width: 29% !important;
     font-size:48% !important;
     color:white !important
 
@@ -563,8 +643,24 @@ width: 30% !important;
     .feed_points{
    
        
-          margin-left: 14% !important;
+          margin-left: 20% !important;
           margin-top: 3% !important;
+          font-size: 15px !important
+        
+}
+.run_point{
+    margin-left: 6% !important;
+}
+}
+
+
+@media only screen and (max-width: 490px) {
+ 
+    .feed_points{
+   
+       
+          margin-left: 12% !important;
+          margin-top: 5% !important;
           font-size: 15px !important
         
 }

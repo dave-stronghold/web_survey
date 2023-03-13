@@ -9,34 +9,36 @@ import { Link } from 'react-router-dom';
 const Survey = () => {
 const[hover,setHover]=useState(0)
 const[text,setText]=useState(0)
-const[link,setLink]=useState(0)
+const[link,setLink]=useState("")
+const [fields,setFields]=useState("")
 let [val,setVal]=useState(0)
+const firstText = "Complete first Survey";
+const lastText = "Complete last Survey";
     const tickHover=(id)=>{
-        
-     setHover(id)
+   setHover(id);
+   if (id == 1) setLink("bank");
+   else setLink("hotel");
+   console.log(link,'link')
     }
 const submitHandler =()=>{
     console.log("running")
 }
 useEffect(()=>{
-let fields=  localStorage.getItem("fields")
-console.log(fields,'fields')
-  if(fields==="bank") {
-    setHover(2)
-     setVal(2)
-     setLink('hotel')
-    }
-  else if(fields==="hotel") {
-    setVal(2)
-    setHover(2)
-    setLink("bank")
+let value=  localStorage.getItem("fields")
+
+  if (value === "bank") {
+    setHover(2);
+    setVal(2);
+    setLink("hotel");
+  } else if (value === "hotel") {
+    setVal(2);
+    setHover(2);
+    setLink("bank");
+  
   }
-  else return
 },[])
 const submitOk=(val)=>{
 
-if(val==1) setLink('bank')
-else setLink('rest')
 
 }
   return (
@@ -47,8 +49,9 @@ else setLink('rest')
           alignItems: "center",
           justifyContent: "center",
           marginTop: "2%",
+          fontWeight: "700",
+          fontSize: "18px",
         }}
-        className="font"
       >
         Survey
       </div>
@@ -62,7 +65,9 @@ else setLink('rest')
           gap: "1rem",
         }}
       >
-        <div className="font">Complete first Survey</div>
+        <div style={{ fontWeight: "700", fontSize: "18px" }}>
+        {val===1||val===2 ? lastText:firstText}
+        </div>
         <div>
           Complete <span style={{ color: "#E15A93" }}>both</span> surveys one
           after another.
@@ -85,8 +90,9 @@ else setLink('rest')
             border: "1px solid black",
             borderRadius: "15px",
             position: "relative",
+            cursor: "pointer",
           }}
-          className="lop"
+          className={val === 1 ? "opacity" : "lop"}
           onClick={() => tickHover(1)}
           onMouseEnter={() => {
             setText(1);
@@ -100,9 +106,9 @@ else setLink('rest')
             alt="tick"
             style={{ position: "absolute", visibility: "hidden" }}
             className={
-              hover === 1 && val === 0 || val ===2
+              (hover === 1 && val === 0) || val === 2
                 ? "left_tick"
-                : hover === 2 && val===0 || val===1
+                : (hover === 2 && val === 0) || val === 1
                 ? "right_tick"
                 : ""
             }
@@ -110,7 +116,6 @@ else setLink('rest')
           <img
             src={bank}
             alt="ok"
-            onClick={() => submitOk(1)}
             style={{ marginLeft: "37%", marginTop: "25%" }}
           />
           <span
@@ -127,8 +132,10 @@ else setLink('rest')
             minHeight: "10rem",
             border: "1px solid black",
             borderRadius: "15px",
+            cursor: "pointer",
           }}
-          className="lop"
+          className={val === 2 ? "opacity" : "lop"}
+   
           onClick={() => tickHover(2)}
           onMouseEnter={() => {
             setText(2);
@@ -141,7 +148,6 @@ else setLink('rest')
           <img
             src={spoon}
             alt="ok"
-            onClick={() => submitOk(2)}
             style={{ marginLeft: "37%", marginTop: "25%" }}
           />
           <span className={text === 2 ? "white" : "black"}>Restaurant</span>
@@ -157,23 +163,32 @@ else setLink('rest')
           gap: "1rem",
         }}
       >
-        <div style={{ padding: "0 18%" }}>
+        <div
+          style={{ padding: "0 18%", width: "80%", color: "#A29EB6" }}
+          className="first_para"
+        >
           Each survey displays 8 ads based on the previous set of questionnaire.
           After seeing each ad, please score the ads from a scale of 1 to 7
           based on the{" "}
           <span style={{ color: "#E15A93" }}>level of personalization.</span>{" "}
         </div>
-        <div style={{ padding: "0 18%" }}>
+        <div
+          style={{ padding: "0 18%", color: "#A29EB6", width: "80%" }}
+          className="second_para"
+        >
           <span style={{ color: "#E15A93" }}>Note :</span> All Ads will look
           similar in design, please go through the contents carefully and score
           them accordingly.
         </div>
-        <Link to={link === "bank" ? "/image" : "/image2"}>
+        <Link
+          to={link === "bank" ? "/image" : link === "hotel" ? "/image2" : ""}
+        >
           {" "}
           <Button
             variant="dark"
             style={{ marginTop: "5%" }}
             onClick={submitHandler}
+            disabled={link === ""}
           >
             Proceed &#8594;
           </Button>

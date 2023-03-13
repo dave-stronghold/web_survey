@@ -225,11 +225,14 @@ const Home = () => {
           <Form>
             <Form.Group className="mb-4 clr" controlId="formBasic">
               <Form.Label>
-                4.What is the highest level of education you have completed? (If
-                you are a student, please indicate your current level of
-                education.)
+                4.What is the highest level of education you have completed?
               </Form.Label>
-              <div style={{ marginLeft: "35%", marginTop: "3%" }}>
+              <div style={{ color: "#A29EB6", fontSize: "14px" }}>
+                {" "}
+                (If you are a student, please indicate your current level of
+                education.)
+              </div>
+              <div style={{ marginTop: "3%" }}>
                 <Form.Check
                   type="radio"
                   label="Primary school"
@@ -274,11 +277,7 @@ const Home = () => {
                 />
               </div>
             </Form.Group>
-            <Form.Group
-              className="mb-4 clr"
-              controlId="formBasicEmail"
-              style={{ marginLeft: "35%" }}
-            >
+            <Form.Group className="mb-4 clr" controlId="formBasicEmail">
               <Form.Label className="font">
                 5.Which District are you from?
               </Form.Label>
@@ -286,7 +285,7 @@ const Home = () => {
                 type="text"
                 className="text-center clrx"
                 placeholder="district"
-                style={{ width: "30%", marginTop: "2%", marginLeft: "3%" }}
+                style={{ width: "55%", marginTop: "2%", marginLeft: "2%" }}
                 value={place}
                 onChange={(e) => setPlace(e.target.value)}
               />
@@ -301,7 +300,7 @@ const Home = () => {
                   6.In the past week, on average, approximately, how many days
                   have you used Instagram?
                 </Form.Label>
-                <div style={{ marginLeft: "35%", marginTop: "3%" }}>
+                <div style={{  marginTop: "3%" }}>
                   <Form.Check
                     type="radio"
                     label="Once"
@@ -362,10 +361,10 @@ const Home = () => {
                 <Form.Control
                   type="text"
                   className="text-center clrx"
-                  placeholder="selvan,john"
+                  placeholder="John, Oliver, Raj"
                   value={friends}
                   onChange={(e) => setFriends(e.target.value)}
-                  style={{ width: "50%", marginTop: "2%", marginLeft: "15%" }}
+                  style={{ width: "50%", marginTop: "2%", marginLeft: "1%" }}
                 />
               </Form.Group>
             </Form>
@@ -378,7 +377,7 @@ const Home = () => {
                 8.In the past week, on average, how many minutes per day have
                 you spent on Facebook?:
               </Form.Label>
-              <div style={{ marginLeft: "35%", marginTop: "3%" }}>
+              <div style={{  marginTop: "3%" }}>
                 <Form.Check
                   type="radio"
                   label="< 10 min"
@@ -429,7 +428,7 @@ const Home = () => {
           <Form>
             <Form.Group className="mb-4 clr" controlId="formBasic">
               <Form.Label>9.What are you interested in??</Form.Label>
-              <div style={{ marginLeft: "10%", marginTop: "3%" }}>
+              <div style={{ marginTop: "3%" }}>
                 <Form.Check
                   type="radio"
                   label="Socializing"
@@ -506,6 +505,7 @@ const Home = () => {
                   type="text"
                   className="text-center clrx"
                   placeholder="others"
+                  style={{marginTop:"5%"}}
                   disabled={interest === "others" ? false : true}
                   value={interestVal}
                   onChange={(e) => setInterestVal(e.target.value)}
@@ -521,7 +521,7 @@ const Home = () => {
                 10.Select a life event that had happened to you in the last six
                 months:
               </Form.Label>
-              <div style={{ marginLeft: "18%", marginTop: "3%" }}>
+              <div style={{  marginTop: "3%" }}>
                 <Form.Check
                   type="radio"
                   label="Started at a new school/college"
@@ -599,6 +599,7 @@ const Home = () => {
                   type="text"
                   className="text-center clrx"
                   placeholder="enents"
+                  style={{width:"60%",marginTop:"3%"}}
                   disabled={
                     life ===
                     "If none of the above, mention your life event below:"
