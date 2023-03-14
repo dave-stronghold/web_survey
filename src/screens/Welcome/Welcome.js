@@ -17,7 +17,7 @@ const Welcome = () => {
         justifyContent: "center",
         flexDirection: "column",
         gap: "1rem",
-        padding: "0rem 3rem",
+        padding: "0.5rem 3rem",
       }}
     >
       <img src={wel} alt="ok" />

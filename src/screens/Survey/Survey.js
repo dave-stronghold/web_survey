@@ -27,8 +27,8 @@ useEffect(()=>{
 let value=  localStorage.getItem("fields")
 
   if (value === "bank") {
-    setHover(2);
-    setVal(2);
+    setHover(1);
+    setVal(1);
     setLink("hotel");
   } else if (value === "hotel") {
     setVal(2);

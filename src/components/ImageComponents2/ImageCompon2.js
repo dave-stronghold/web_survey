@@ -43,7 +43,7 @@ useEffect(()=>{
           src={hotel}
           alt="run"
           style={{
-            width: "24%",
+            width: "26%",
             display: "block",
 
             margin: "5% auto auto",
