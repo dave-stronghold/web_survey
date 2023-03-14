@@ -45,7 +45,7 @@ const ImageFeedback2 = () => {
        }
    
     } else if (check < 8) {
-      if (!trueFind(feedback)[0]) return message.info("Please give a rarting");
+      if (!trueFind(feedback)[0]) return message.info("Please give a rating");
       else {
         setFeedback1((prevFeedbacks) => [
           ...prevFeedbacks,

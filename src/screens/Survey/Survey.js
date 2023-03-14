@@ -48,16 +48,19 @@ const submitOk=(val)=>{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: "2%",
+          marginTop: "30px",
+          marginLeft:"25px",
+          marginRight:"25px",
           fontWeight: "700",
           fontSize: "18px",
         }}
       >
         Survey
       </div>
-      <div
+      <div className='capCon'
         style={{
-          marginTop: "4rem",
+          marginTop: "2rem",
+          
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -78,7 +81,7 @@ const submitOk=(val)=>{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          gap: "2rem",
+          gap: "16px",
           marginTop: "3rem",
         }}
       >
@@ -87,8 +90,8 @@ const submitOk=(val)=>{
             width: "10%",
             minWidth: "10rem",
             minHeight: "10rem",
-            border: "1px solid black",
-            borderRadius: "15px",
+            boxShadow:" 0px 1px 8px rgba(0, 0, 0, 0.08)",
+            borderRadius: "16px",
             position: "relative",
             cursor: "pointer",
           }}
@@ -130,8 +133,8 @@ const submitOk=(val)=>{
             width: "10%",
             minWidth: "10rem",
             minHeight: "10rem",
-            border: "1px solid black",
-            borderRadius: "15px",
+            boxShadow:" 0px 1px 8px rgba(0, 0, 0, 0.08)",
+            borderRadius: "16px",
             cursor: "pointer",
           }}
           className={val === 2 ? "opacity" : "lop"}
@@ -186,7 +189,7 @@ const submitOk=(val)=>{
           {" "}
           <Button
             variant="dark"
-            style={{ marginTop: "5%" }}
+            style={{ marginTop: "5%" ,borderRadius:"12px"}}
             onClick={submitHandler}
             disabled={link === ""}
           >

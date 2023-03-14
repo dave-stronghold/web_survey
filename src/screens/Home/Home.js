@@ -23,6 +23,7 @@ const Home = () => {
   const [lifeVal, setLifeVal] = useState("");
   const [interestVal, setInterestVal] = useState("");
   const navigate = useNavigate();
+  
   //   useEffect(() => {
   //     console.log(check)
   //  check.current=4
@@ -32,7 +33,6 @@ const Home = () => {
 
   const handleChange = (e) => {
     e.persist();
-
     setGender(e.target.value);
   };
 
@@ -224,7 +224,7 @@ const Home = () => {
         {check == 2 && (
           <Form>
             <Form.Group className="mb-4 clr" controlId="formBasic">
-              <Form.Label>
+              <Form.Label className="font">
                 4.What is the highest level of education you have completed?
               </Form.Label>
               <div style={{ color: "#A29EB6", fontSize: "14px" }}>
@@ -296,7 +296,7 @@ const Home = () => {
           <div>
             <Form>
               <Form.Group className="mb-4 clr" controlId="formBasic">
-                <Form.Label>
+                <Form.Label className="font">
                   6.In the past week, on average, approximately, how many days
                   have you used Instagram?
                 </Form.Label>
@@ -355,7 +355,7 @@ const Home = () => {
             </Form>
             <Form>
               <Form.Group className="mb-4 clr" controlId="formBasicEmail">
-                <Form.Label>
+                <Form.Label className="font">
                   7.Let us know your best friend’s name:(Max. Two or Three)
                 </Form.Label>
                 <Form.Control
@@ -373,9 +373,9 @@ const Home = () => {
         {check === 4 && (
           <Form>
             <Form.Group className="mb-4 clr" controlId="formBasic">
-              <Form.Label>
+              <Form.Label className="font">
                 8.In the past week, on average, how many minutes per day have
-                you spent on Facebook?:
+                you spent on Instagram?:
               </Form.Label>
               <div style={{  marginTop: "3%" }}>
                 <Form.Check
@@ -427,7 +427,7 @@ const Home = () => {
         {check === 5 && (
           <Form>
             <Form.Group className="mb-4 clr" controlId="formBasic">
-              <Form.Label>9.What are you interested in??</Form.Label>
+              <Form.Label className="font">9.What are you interested in??</Form.Label>
               <div style={{ marginTop: "3%" }}>
                 <Form.Check
                   type="radio"
@@ -517,7 +517,7 @@ const Home = () => {
         {check === 6 && (
           <Form>
             <Form.Group className="mb-4 clr" controlId="formBasic">
-              <Form.Label>
+              <Form.Label className="font">
                 10.Select a life event that had happened to you in the last six
                 months:
               </Form.Label>
@@ -615,7 +615,7 @@ const Home = () => {
         )}
         <Button
           variant="dark"
-          style={{ marginTop: "5%", marginLeft: "3%" }}
+          style={{ marginTop: "5%", marginLeft: "3%" ,borderRadius:"12px"}}
           onClick={submitHandler}
         >
           {check === 6 ? "Submit" : "Next   ->"}

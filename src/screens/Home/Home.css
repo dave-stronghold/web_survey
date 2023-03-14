@@ -1,11 +1,15 @@
 .font{
- font-weight: 400 !important;
-font-size: 15px !important
+ font-weight: 500 !important;
+font-size: 16px !important
 }
 
 Form {
     
-    margin-left: 7%;
+    /* margin-left: 7%;
+    margin-top: 3%; */
+    margin-left: 25px;
+    margin-right: 25px;
     margin-top: 3%;
 
 }
+
