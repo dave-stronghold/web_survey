@@ -32,31 +32,35 @@ const ImageFeedback2 = () => {
     });
     return [new_val, final_count];
   };
-  const submitHandler = () => {
-    if (check == 8) {
-      localStorage.setItem("feedback_2",feedback1)
-       if (localStorage.getItem("fields") === "bank") {
-         localStorage.setItem("fields", "done");
-         
-         navigate("/final");
-       } else {
-         localStorage.setItem("fields", "hotel");
-         navigate("/Survey");
-       }
-   
-    } else if (check < 8) {
-      if (!trueFind(feedback)[0]) return message.info("Please give a rarting");
+  const submitHandler = async () => {
+    if (check <= 8) {
+      if (!trueFind(feedback)[0]) return message.info("Please give a rating");
       else {
         setFeedback1((prevFeedbacks) => [
           ...prevFeedbacks,
           trueFind(feedback)[1],
         ]);
-        
+
         setCheck(check + 1);
       }
     }
-  };
 
+    if (check == 8) {
+      if (localStorage.getItem("fields") === "bank") {
+        localStorage.setItem("fields", "done");
+
+        navigate("/final");
+      } else {
+        localStorage.setItem("fields", "hotel");
+        navigate("/Survey");
+      }
+    }
+  };
+  useEffect(() => {
+    if (check === 8) {
+      localStorage.setItem("feedback_2", feedback1);
+    }
+  }, [feedback1, check]);
   const reduHandler = () => {
     setCheck(check - 1);
   };
@@ -94,9 +98,9 @@ const ImageFeedback2 = () => {
     }
   }, []);
 
-  const pull_data = (data,val) => {
+  const pull_data = (data, val) => {
     setFeedback(data);
-    localStorage.setItem(val,JSON.stringify(data))
+    localStorage.setItem(val, JSON.stringify(data));
   };
   return (
     <>
@@ -138,43 +142,43 @@ const ImageFeedback2 = () => {
       )}
       {questions.length > 0 && check == 2 && (
         <ImageCompon2
-          questions={[questions[3], questions[4], questions[5],2]}
+          questions={[questions[3], questions[4], questions[5], 2]}
           func={pull_data}
         />
       )}
       {questions.length > 0 && check == 3 && (
         <ImageCompon2
-          questions={[questions[6], questions[7], questions[8],3]}
+          questions={[questions[6], questions[7], questions[8], 3]}
           func={pull_data}
         />
       )}
       {questions.length > 0 && check == 4 && (
         <ImageCompon2
-          questions={[questions[9], questions[10], questions[11],4]}
+          questions={[questions[9], questions[10], questions[11], 4]}
           func={pull_data}
         />
       )}
       {questions.length > 0 && check == 5 && (
         <ImageCompon2
-          questions={[questions[12], questions[13], questions[14],5]}
+          questions={[questions[12], questions[13], questions[14], 5]}
           func={pull_data}
         />
       )}
       {questions.length > 0 && check == 6 && (
         <ImageCompon2
-          questions={[questions[15], questions[16], questions[17],6]}
+          questions={[questions[15], questions[16], questions[17], 6]}
           func={pull_data}
         />
       )}
       {questions.length > 0 && check == 7 && (
         <ImageCompon2
-          questions={[questions[18], questions[19], questions[20],7]}
+          questions={[questions[18], questions[19], questions[20], 7]}
           func={pull_data}
         />
       )}
       {questions.length > 0 && check == 8 && (
         <ImageCompon2
-          questions={[questions[21], questions[22], questions[23],8]}
+          questions={[questions[21], questions[22], questions[23], 8]}
           func={pull_data}
         />
       )}

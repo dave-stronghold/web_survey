@@ -17,52 +17,62 @@ const ImageFeedback = () => {
 
   const navigate = useNavigate();
 
-
-    const trueFind = (data) => {
-      let final = Object.values(data);
-      let new_val = false;
-      let count = 0;
-      let final_count = 0;
-      final.map((val) => {
-        count += 1;
-        if (val === true) {
-          final_count = count;
-          new_val = true;
-        }
-      });
-      return [new_val, final_count];
-    };
+  const trueFind = (data) => {
+    let final = Object.values(data);
+    let new_val = false;
+    let count = 0;
+    let final_count = 0;
+    final.map((val) => {
+      count += 1;
+      if (val === true) {
+        final_count = count;
+        new_val = true;
+      }
+    });
+    return [new_val, final_count];
+  };
   const submitHandler = () => {
-    if (check == 8) {
-        localStorage.setItem("feedback_1", feedback1);
-           if (localStorage.getItem("fields") === "hotel") {
-             localStorage.setItem("fields", "done");
-                  navigate("/final");
-           }else{
-                  localStorage.setItem("fields", "bank");
-                 navigate("/Survey");
-           }
- 
-    } else if (check < 8) {
-      if (!trueFind(feedback)[0]) return message.info("Please give a rarting");
+    if (check <= 8) {
+      if (!trueFind(feedback)[0]) return message.info("Please give a rating");
       else {
         setFeedback1((prevFeedbacks) => [
           ...prevFeedbacks,
           trueFind(feedback)[1],
         ]);
         setCheck(check + 1);
-   
+      }
+    }
+    if (check == 8) {
+      // localStorage.setItem("feedback_1", feedback1);
+      if (localStorage.getItem("fields") === "hotel") {
+        localStorage.setItem("fields", "done");
+        navigate("/final");
+      } else {
+        localStorage.setItem("fields", "bank");
+        navigate("/Survey");
       }
     }
   };
+  useEffect(() => {
+    if (check === 8) {
+      let final =localStorage.getItem(16)
+      if(final) {
+        
+       let valo= setFeedback1((prevFeedbacks) => [
+          ...prevFeedbacks,
+          trueFind(final)[1],
+        ]);
+  if(valo){
+      localStorage.setItem("feedback_1", feedback1);}}
+    }
+  }, [feedback1, check]);
   const reduHandler = () => {
     setCheck(check - 1);
   };
   useEffect(() => {
     const old_data = localStorage.getItem("items");
-    let new_data = JSON.parse(old_data)
+    let new_data = JSON.parse(old_data);
     if (new_data.length > 0) {
-        
       setData(new_data);
       setQuestions([
         `Best choice for people ${new_data[1]} and largely preferred by ${new_data[2]}`,
@@ -83,13 +93,12 @@ const ImageFeedback = () => {
         `Your close friends  ${new_data[5]} like our services!`,
       ]);
     }
-    
   }, []);
- 
-   const pull_data = (data, val) => {
-     setFeedback(data);
-     localStorage.setItem(val, JSON.stringify(data));
-   };
+
+  const pull_data = (data, val) => {
+    setFeedback(data);
+    localStorage.setItem(val, JSON.stringify(data));
+  };
   return (
     <>
       <div
@@ -129,25 +138,46 @@ const ImageFeedback = () => {
         />
       )}
       {questions.length > 0 && check == 2 && (
-        <ImageCom questions={[questions[2], questions[3],10]} func={pull_data} />
+        <ImageCom
+          questions={[questions[2], questions[3], 10]}
+          func={pull_data}
+        />
       )}
       {questions.length > 0 && check == 3 && (
-        <ImageCom questions={[questions[4], questions[5],11]} func={pull_data} />
+        <ImageCom
+          questions={[questions[4], questions[5], 11]}
+          func={pull_data}
+        />
       )}
       {questions.length > 0 && check == 4 && (
-        <ImageCom questions={[questions[6], questions[7],12]} func={pull_data} />
+        <ImageCom
+          questions={[questions[6], questions[7], 12]}
+          func={pull_data}
+        />
       )}
       {questions.length > 0 && check == 5 && (
-        <ImageCom questions={[questions[8], questions[9],13]} func={pull_data} />
+        <ImageCom
+          questions={[questions[8], questions[9], 13]}
+          func={pull_data}
+        />
       )}
       {questions.length > 0 && check == 6 && (
-        <ImageCom questions={[questions[10], questions[11],14]} func={pull_data} />
+        <ImageCom
+          questions={[questions[10], questions[11], 14]}
+          func={pull_data}
+        />
       )}
       {questions.length > 0 && check == 7 && (
-        <ImageCom questions={[questions[12], questions[13],15]} func={pull_data} />
+        <ImageCom
+          questions={[questions[12], questions[13], 15]}
+          func={pull_data}
+        />
       )}
       {questions.length > 0 && check == 8 && (
-        <ImageCom questions={[questions[14], questions[15],16]} func={pull_data} />
+        <ImageCom
+          questions={[questions[14], questions[15], 16]}
+          func={pull_data}
+        />
       )}
       <Button
         variant="dark"

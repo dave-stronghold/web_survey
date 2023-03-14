@@ -20,7 +20,7 @@ font-style: italic !important;
     top: 1%;
     left: 50.2%;
     width: 11%;
-    font-size:60% !important;
+    font-size:11px !important;
     color:white !important
 
 }
@@ -31,12 +31,13 @@ font-style: italic !important;
     top: 36%;
     left: 39%;
     width: 10.5%;
-    font-size:70% !important;
-    color:#E0B555 !important
+    font-size:11.5px !important;
+    color:#E0B555 !important;
+    padding-top: 10px !important;
 
 }
 .width{
-    width: 13% !important;
+    width: 13.3% !important;
 }
 .width2{
     width: 15% !important;
@@ -47,22 +48,23 @@ font-style: italic !important;
     top: 91%;
     left: 50%;
     width: 12%;
-      font-size:54% !important;
+      font-size:11px !important;
         color:white !important
 }
 
 .ok_text{
 
             position: absolute;
-            top: 47%;
-            left: 36.5%;
+            top: 44%;
+            left: 37.3%;
+            padding:8px;
             color: white
       
         
         
 }
 
-@media only screen and (max-width: 1285px) {
+@media only screen and (max-width: 1500px) {
     /* .hotel{
        width: 60% !important;
     } */
@@ -73,7 +75,7 @@ font-style: italic !important;
     top: 1%;
     left: 50.5%;
     width: 11%;
-    font-size:60% !important;
+    font-size:9.5px !important;
     color:white !important
 
 }
@@ -82,8 +84,8 @@ font-style: italic !important;
     
     position: absolute;
     top: 39%;
-    left: 39.5%;
-    width: 10% !important;
+    left: 39%;
+    width: 11% !important;
     font-size:59% !important;
     color:#E0B555 !important
 
@@ -93,8 +95,7 @@ font-style: italic !important;
 }
 .width2{
     width: 15% !important;
-    font-size:88% !important;
-    font-size: 13px !important;
+    font-size: 11.5px !important;
 }
 .down_text{
     top: 90%;
@@ -106,17 +107,17 @@ font-style: italic !important;
 }
 
 @media only screen and (max-width: 1180px) {
-    /* .hotel{
-       width: 60% !important;
-    } */
+    .hotel{
+       width: 40% !important;
+    } 
     
 .up_text{
     
     position: absolute;
     top: 1%;
     left: 50.3%;
-    width: 12%;
-    font-size:55% !important;
+    width: 14%;
+    font-size:10px !important;
     color:white !important
 
 }
@@ -125,9 +126,9 @@ font-style: italic !important;
     
     position: absolute;
     top: 37%;
-    left: 39.4%;
-    width: 10.7% !important;
-    font-size:53% !important;
+    left: 33.4%;
+    width: 15.7% !important;
+    font-size:11.6px !important;
     color:#E0B555 !important;
      height:"7%"
 }
@@ -137,13 +138,13 @@ font-style: italic !important;
 .width2{
     width: 15% !important;
     font-size:88% !important;
-    font-size: 13px !important;
+    font-size: 12px !important;
 }
 .down_text{
     top: 90%;
     left: 50.5%;
-    width: 11%;
-      font-size:54% !important;
+    width: 16%;
+      font-size:11px !important;
         color:white !important
 }
 }
@@ -151,7 +152,8 @@ font-style: italic !important;
 .do_text{
     position: absolute;
             top: 74%;
-            left: 50%
+            left: 49%;
+            padding:4.5px !important
 }
 
 
@@ -182,120 +184,121 @@ width: 51% !important;
   
 
     .ok_text{
-        top: 47%;
-            left: 38.7%; 
-            width: 10%;
-            font-size: 60% !important;
+     left:37.5%;
+       width: 13.4% !important;
+       padding: 3.3px  !important;
+       font-size: 11px !important;
+       width: 12.8% !important;
+       padding-top: 10px !important;
+       line-height: 1.3 !important;
     }
     .do_text{
-            top: 74%;
-            left: 50.5%;
-            width: 10% !important;
-                    font-size: 70% !important;
+        font-size: 10.5px !important;
+     
 }
-    .width{
-width: 11% !important;
+
+}
+@media only screen and (max-width: 1420px) {
+  
+
+    .ok_text{
+     left:37.5%;
+       width: 13.4% !important;
+       padding: 3.3px  !important;
+       font-size: 10.5px !important;
+       width: 12.8% !important;
+       padding-top: 7px !important;
+       line-height: 1.2 !important;
     }
-    .width2{
-width: 11.4% !important;
-    }
+    .do_text{
+        font-size: 10px !important;
+     
+}
+
 }
 @media only screen and (max-width: 1200px) {
   
 
     .ok_text{
-        top: 47%;
-            left: 36.5%; 
-            width: 10%;
-            font-size: 58% !important;
+        top: 44%;
+            left: 37.8%; 
+            width: 12.7% !important;
+            font-size: 8.4px !important;
     }
     .do_text{
             top: 74%;
             left: 49%;
-            width: 10% !important;
-                    font-size: 70% !important;
+            width: 14% !important;
+                    font-size: 8.2px !important;
 }
-    .width{
-width: 14% !important;
-    }
-    .width2{
-width: 16% !important;
-    }
+  
+   
 }
 @media only screen and (max-width: 1000px) {
   
 
     .ok_text{
-        top: 47%;
+        top: 44%;
             left: 33.5%; 
-            width: 10%;
-            font-size: 50% !important;
+            width: 17% !important;
+            font-size: 9px !important;
     }
     .do_text{
             top: 74%;
             left: 50%;
-                    font-size: 53% !important;
+            width: 19% !important;
+                    font-size:8.6px!important;
 
 }
-    .width{
-width: 16.7% !important;
-    }
-    .width2{
-width: 18% !important;
-    }
+ 
+   
     .img1_button{
         margin-top: 4%;
     }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   
 
     .ok_text{
-        top: 47%;
+        top: 43%;
             left: 33.5%; 
-            width: 15%;
-            font-size: 41% !important;
+            width: 18.5% !important;
+            padding-top: 6px !important;
+            font-size: 7.5px !important;
     }
     .do_text{
-            top: 74%;
-            left: 53%;
-            width: 10% !important;
-                    font-size: 40% !important;
+            top: 72%;
+            left: 48%;
+            width: 21% !important;
+                    font-size: 7.3px !important;
 
 }
-    .width{
-width: 16% !important;
-    }
-    .width2{
-width: 15.5% !important;
-    }
+ 
     .img1_button{
         margin-top: 4%;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
   
-
+.bank{
+    width: 60% !important;
+}
     .ok_text{
         top: 45%;
-            left: 33.5%; 
-            width: 15%;
-            font-size: 40% !important;
+            left: 23%; 
+            width: 28% !important;
+            font-size: 10.5px !important;
     }
     .do_text{
             top: 74%;
             left: 50%;
-            width: 10% !important;
-                    font-size: 42% !important;
+            width: 29% !important;
+                    font-size: 10px !important;
 
 }
-    .width{
-width: 16% !important;
-    }
-    .width2{
-width: 18% !important;
-    }
+ 
+  
     .img1_button{
         margin-top: 4%;
     }
@@ -308,24 +311,19 @@ width: 18% !important;
   }
 
     .ok_text{
-        top: 49%;
+        top: 45%;
             left: 20.5%; 
-            width: 25%;
-            font-size: 50% !important;
+            width: 28% !important;
+            font-size: 9.5px !important;
     }
     .do_text{
             top: 74%;
-            left: 54%;
-            width: 10% !important;
-                    font-size: 50% !important;
+            left: 51%;
+            width: 32% !important;
+                    font-size: 9px !important;
 
 }
-    .width{
-width: 30% !important;
-    }
-    .width2{
-width: 28% !important;
-    }
+  
   
     .img1_button{
         margin-top: 2%;
@@ -364,17 +362,17 @@ width: 30% !important;
 
 
 @media only screen and (max-width: 1010px) {
-    /* .hotel{
-       width: 60% !important;
-    } */
+    .hotel{
+       width: 40% !important;
+    }
     
 .up_text{
     
     position: absolute;
     top: 1%;
     left: 50.5%;
-    width: 11%;
-    font-size:45% !important;
+    width: 14%;
+    font-size:10px !important;
     color:white !important
 
 }
@@ -383,18 +381,18 @@ width: 30% !important;
     
     position: absolute;
     top: 38%;
-    left: 39%;
+    left: 33%;
     width: 12%;
-    font-size:51% !important;
+    font-size:10.5px !important;
     color:#E0B555 !important
 
 }
 
 .down_text{
-    top: 89%;
+    top: 90%;
     left: 50.3%;
-    width: 10.5%;
-      font-size:50% !important;
+    width: 15.5%;
+      font-size:10px !important;
         color:white !important
 }
 }
@@ -411,8 +409,8 @@ width: 30% !important;
     position: absolute;
     top: 1%;
     left: 50.5%;
-    width: 11%;
-    font-size:40% !important;
+    width: 19% !important;
+    font-size:9px !important;
     color:white !important
 
 }
@@ -421,18 +419,18 @@ width: 30% !important;
     
     position: absolute;
     top: 37%;
-    left: 39%;
-    width: 11%;
-    font-size:45% !important;
+    left: 33%;
+    width: 13%;
+    font-size:9.3px !important;
     color:#E0B555 !important
 
 }
 
 .down_text{
-    top: 87.5%;
+    top: 88.5%;
     left: 50.5%;
-    width: 11%;
-      font-size:43% !important;
+    width: 15%;
+      font-size:9px !important;
         color:white !important
 }
 }
@@ -457,7 +455,7 @@ width: 30% !important;
     position: absolute;
     top: 37%;
     left: 33%;
-    width: 15% !important;
+    width: 16% !important;
     font-size:53% !important;
     color:#E0B555 !important
 
@@ -509,7 +507,7 @@ width: 30% !important;
 }
 
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 665px) {
     .hotel{
        width: 60% !important;
     }
@@ -530,16 +528,16 @@ width: 30% !important;
     top: 35%;
     left: 25%;
     width: 23% !important;
-    font-size:60% !important;
+    font-size:53% !important;
     color:#E0B555 !important
 
 }
 
 .down_text{
-    top: 93%;
+    top: 90%;
     left: 53%;
     width: 27%;
-      font-size:48% !important;
+      font-size:9px !important;
         color:white !important
 }
 }
@@ -553,8 +551,8 @@ width: 30% !important;
     position: absolute;
     top: 1%;
     left: 53%;
-    width: 29% !important;
-    font-size:48% !important;
+    width: 33% !important;
+    font-size:9px !important;
     color:white !important
 
 }
@@ -565,7 +563,7 @@ width: 30% !important;
     top: 37%;
     left: 19%;
     width: 23%;
-    font-size:53% !important;
+    font-size:7.5px !important;
     color:#E0B555 !important
 
 }
